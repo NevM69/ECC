@@ -66,6 +66,7 @@ you.
 | Executive/personal protection risk planning | `close-protection-risk-analyst` |
 | Open-source/lawful investigation, asset tracing | `osint-investigation-agent` |
 | Incident evidence handling, forensic examination | `digital-forensics-examiner` |
+| Geographic profiling, search-zone/LIDAR analysis, missing-person search support | `criminology-analyst` |
 | Penetration test / offensive security engagement | `pentest-engagement-lead` |
 | New tool evaluation for the practice's stack | `security-consulting-rd-engineer` |
 | Proposals, case studies, service marketing | `consulting-marketing-lead` |

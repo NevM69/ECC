@@ -1,5 +1,5 @@
 ---
-description: Run a cybersecurity, due diligence, privacy, protection-of-persons, or investigation consulting engagement through the firm's intake, routing, and reporting workflow.
+description: Run a cybersecurity, due diligence, privacy, protection-of-persons, investigation, or criminology consulting engagement through the firm's intake, routing, and reporting workflow.
 allowed-tools: ["Read", "Grep", "Glob", "WebSearch", "WebFetch", "Write"]
 ---
 
@@ -26,6 +26,7 @@ report.
 /consulting-engagement protection [brief]      # Personal/executive protection risk planning
 /consulting-engagement investigation [brief]   # Lawful OSINT investigation
 /consulting-engagement forensics [brief]       # Digital forensics / evidence handling
+/consulting-engagement criminology [brief]     # Geographic profiling, terrain/LIDAR search support
 /consulting-engagement pentest [brief]         # Penetration test / offensive security
 /consulting-engagement tooling [brief]         # New tool evaluation for the firm's stack
 /consulting-engagement marketing [brief]       # Proposals, case studies, one-pagers
@@ -77,8 +78,8 @@ This command invokes:
 - `managing-partner` — routing, sequencing, and final assembly
 - `due-diligence-analyst`, `privacy-compliance-consultant`,
   `close-protection-risk-analyst`, `osint-investigation-agent`,
-  `digital-forensics-examiner`, `pentest-engagement-lead` — service-line
-  specialists
+  `digital-forensics-examiner`, `criminology-analyst`,
+  `pentest-engagement-lead` — service-line specialists
 - `security-consulting-rd-engineer` — tooling mode
 - `consulting-marketing-lead` — marketing mode
 

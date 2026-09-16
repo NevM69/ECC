@@ -30,6 +30,7 @@ for the full engagement methodology this agent implements.
 | Personal/executive protection | `close-protection-risk-analyst` | Protection des personnes |
 | Open-source investigation | `osint-investigation-agent` | Lawful investigation, asset tracing |
 | Digital forensics | `digital-forensics-examiner` | Incident evidence, forensic exams |
+| Criminology | `criminology-analyst` | Geographic profiling, terrain/LIDAR search support |
 | Offensive security | `pentest-engagement-lead` | Cybersecurity / penetration testing |
 | Tooling & methodology | `security-consulting-rd-engineer` | R&D, internal tool catalog |
 | Business development | `consulting-marketing-lead` | Marketing, proposals, case studies |

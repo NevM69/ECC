@@ -50,16 +50,23 @@ map to the workspace's available repositories:
   (cross-platform handle correlation). Primary consumer:
   `osint-investigation-agent`.
 - **Digital forensics** — Autopsy (disk/timeline/artifact analysis),
-  IPED (indexing and multi-case correlation), PhenoVisio-Forensic and
-  forensic-pocket-lab (media/biometric analysis — requires the
-  special-category-data check before use). Primary consumer:
-  `digital-forensics-examiner`.
+  IPED (indexing and multi-case correlation), forensic-pocket-lab.
+  Primary consumer: `digital-forensics-examiner`.
 - **Attack-surface & exposure recon** — web-check (external attack
   surface/DNS/TLS recon), glassbox (application-layer inspection).
   Primary consumer: `pentest-engagement-lead`.
 - **Physical, RF, and geospatial** — RF-Secure-Radar, G_Wardrive,
-  GEOLIDARIS, NevM69-perimeter-radar. Primary consumer:
-  `close-protection-risk-analyst` for venue/residence surveys.
+  NevM69-perimeter-radar. Primary consumer: `close-protection-risk-analyst`
+  for venue/residence surveys.
+- **Criminology, geographic profiling & LIDAR** — GEOLIDARIS (Copernicus
+  satellite search-zone guidance) and PhenoVisio-Forensic (facial/
+  phenotype analysis — requires the special-category-data check before
+  use) from the workspace, plus externally evaluated PySAL and leafmap
+  (spatial statistics and mapping for geographic profiling), PDAL,
+  CloudCompare, and lidR (LIDAR/point-cloud processing), WhiteboxTools
+  (geomorphometric terrain analysis), OpenTopography (open LIDAR/DEM data
+  portal), and Apis Intel (case-graphing/cross-referencing platform).
+  Primary consumer: `criminology-analyst`.
 - **Legal and compliance support** — paralegal (drafting and research
   support). Primary consumer: `privacy-compliance-consultant` and
   `engagement-secretary` for engagement-letter and consent drafting.

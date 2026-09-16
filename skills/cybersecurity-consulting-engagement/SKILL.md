@@ -14,11 +14,12 @@ description: >-
 # Cybersecurity Consulting Engagement
 
 This skill is the operating manual for a small consulting practice built
-as a set of Claude Code agents, covering five service lines:
+as a set of Claude Code agents, covering six service lines:
 **cybersecurity** (offensive security / pentest), **due diligence**,
-**privacy**, **protection of persons**, and **investigation** — plus the
-support functions that keep the practice running: front-desk intake,
-business development, and R&D.
+**privacy**, **protection of persons**, **investigation**, and
+**criminology** (geographic profiling, terrain/LIDAR search support) —
+plus the support functions that keep the practice running: front-desk
+intake, business development, and R&D.
 
 ## When to Activate
 
@@ -40,6 +41,7 @@ business development, and R&D.
 | Protection of persons | `close-protection-risk-analyst` | Threat assessment, travel/venue security planning |
 | Investigation | `osint-investigation-agent` | Lawful OSINT field work |
 | Cybersecurity (forensics) | `digital-forensics-examiner` | Evidence handling, forensic exams |
+| Criminology | `criminology-analyst` | Geographic profiling, terrain/LIDAR search support |
 | Cybersecurity (offensive) | `pentest-engagement-lead` | ROE, pentest methodology, findings reports |
 | Marketing / BD | `consulting-marketing-lead` | Proposals, case studies, one-pagers |
 | R&D | `security-consulting-rd-engineer` | Tool evaluation, internal catalog, SOPs |
@@ -91,9 +93,10 @@ security repositories:
 | Category | Example repos | Consumer |
 |---|---|---|
 | OSINT collection & methodology | OSINT-Framework, flowsint, Osintgram, TorBot, Threat-Actor-Usernames-Scrape | `osint-investigation-agent` |
-| Digital forensics | Autopsy, IPED, PhenoVisio-Forensic, forensic-pocket-lab | `digital-forensics-examiner` |
+| Digital forensics | Autopsy, IPED, forensic-pocket-lab | `digital-forensics-examiner` |
 | Attack-surface recon | web-check, glassbox | `pentest-engagement-lead` |
-| Physical / RF / geospatial | RF-Secure-Radar, G_Wardrive, GEOLIDARIS, NevM69-perimeter-radar | `close-protection-risk-analyst` |
+| Physical / RF / geospatial | RF-Secure-Radar, G_Wardrive, NevM69-perimeter-radar | `close-protection-risk-analyst` |
+| Criminology / geo-profiling / LIDAR | GEOLIDARIS, PhenoVisio-Forensic (workspace) + PySAL, PDAL, CloudCompare, lidR, WhiteboxTools, leafmap, OpenTopography, Apis Intel (external) | `criminology-analyst` |
 | Legal & compliance support | paralegal | `privacy-compliance-consultant`, `engagement-secretary` |
 | Reference libraries | Awesome-OSINT-List, Awesome-Pentest, CL4R1T4S | all specialists (read-only reference) |
 | Internal agent tooling | agents-cli, codexskills, skills, headroom, goose, pcybox-orbis | practice's own workflow maintenance |
@@ -111,6 +114,7 @@ Each specialist agent file carries its own `## Output Format` block:
 - Protective risk assessment — `agents/close-protection-risk-analyst.md`
 - OSINT investigation report — `agents/osint-investigation-agent.md`
 - Forensic examination report — `agents/digital-forensics-examiner.md`
+- Criminological analysis memo — `agents/criminology-analyst.md`
 - Penetration test report — `agents/pentest-engagement-lead.md`
 
 Standing template, maintained by `security-consulting-rd-engineer` per the
@@ -128,6 +132,7 @@ mature enough to adopt as-is):
 /consulting-engagement privacy "DPIA for a new customer-analytics feature"
 /consulting-engagement protection "Executive travel risk assessment, Q4 conference circuit"
 /consulting-engagement investigation "Trace public digital footprint of a suspected fraud counterparty per mandate M-2026-07"
+/consulting-engagement criminology "Prioritize a search zone from 4 related incident sites, per mandate with local law enforcement"
 /consulting-engagement pentest "External web app pentest, signed ROE attached"
 ```
 
