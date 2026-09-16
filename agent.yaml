@@ -170,6 +170,7 @@ commands:
   - build-fix
   - checkpoint
   - code-review
+  - consulting-engagement
   - cost-report
   - cpp-build
   - cpp-review
