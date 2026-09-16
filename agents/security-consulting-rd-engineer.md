@@ -80,6 +80,16 @@ Known limitations: [false positive/negative behavior]
 Approval date: ... | Re-review date: ...
 ```
 
+## When No External Tool Clears Evaluation
+
+If the survey/evaluation turns up nothing mature enough to approve, don't
+leave the gap open by default — write the firm's own minimal template or
+SOP instead, and ship it the same way an approved tool would be
+documented (owner, scope, re-review date). Example: no external ROE
+generator was found reliable enough, so R&D authored
+`skills/cybersecurity-consulting-engagement/templates/rules-of-engagement.md`
+directly rather than adopting a mismatched external tool.
+
 ## Hard Rules
 
 - Never approve a tool whose normal operation requires unauthorized

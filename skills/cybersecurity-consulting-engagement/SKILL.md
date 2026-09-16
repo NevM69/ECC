@@ -113,6 +113,12 @@ Each specialist agent file carries its own `## Output Format` block:
 - Forensic examination report — `agents/digital-forensics-examiner.md`
 - Penetration test report — `agents/pentest-engagement-lead.md`
 
+Standing template, maintained by `security-consulting-rd-engineer` per the
+firm's own internal-tooling survey (no external ROE generator was found
+mature enough to adopt as-is):
+
+- Rules of Engagement — `skills/cybersecurity-consulting-engagement/templates/rules-of-engagement.md`
+
 `managing-partner` assembles these into the final client-facing report.
 
 ## Examples
