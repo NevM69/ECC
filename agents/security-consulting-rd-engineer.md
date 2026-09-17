@@ -68,8 +68,8 @@ map to the workspace's available repositories:
   portal), and Apis Intel (case-graphing/cross-referencing platform).
   Primary consumer: `criminology-analyst`.
 - **Legal and compliance support** — paralegal (drafting and research
-  support). Primary consumer: `privacy-compliance-consultant` and
-  `engagement-secretary` for engagement-letter and consent drafting.
+  support). Primary consumer: `privacy-compliance-consultant` for
+  consent-form and compliance-document drafting.
 - **Reference libraries** — Awesome-OSINT-List, Awesome-Pentest,
   CL4R1T4S. Read-only reference material, not executable tooling.
 - **Internal agent tooling** — agents-cli, codexskills, skills, headroom,
@@ -81,7 +81,7 @@ map to the workspace's available repositories:
 ```text
 Tool: <name> | Category: <from catalog> | Approved for: <agent(s)>
 Legal/ToS constraints: ...
-Required preconditions before use: [e.g. signed mandate, specific scope]
+Required preconditions before use: [e.g. stated purpose/scope, signed ROE for testing tools]
 Data handling: [what it stores, where, retention]
 Known limitations: [false positive/negative behavior]
 Approval date: ... | Re-review date: ...

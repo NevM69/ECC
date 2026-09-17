@@ -5,10 +5,9 @@ allowed-tools: ["Read", "Grep", "Glob", "WebSearch", "WebFetch", "Write"]
 
 # /consulting-engagement
 
-Run a client engagement through the practice built in
-`skills/cybersecurity-consulting-engagement`: intake and authorization
-check, routing to the right specialist agent(s), and an assembled final
-report.
+Run an engagement through the solo-operated practice built in
+`skills/cybersecurity-consulting-engagement`: a one-line intake check,
+routing to the right specialist agent(s), and an assembled final report.
 
 ## Usage
 
@@ -34,36 +33,34 @@ report.
 
 ## What It Does
 
-1. **Intake** — `engagement-secretary` verifies the requesting party,
-   subject, lawful basis/mandate, conflicts of interest, and scope
-   boundaries. No specialist agent runs before this returns a `ROUTE`
-   decision.
-2. **Routing** — `managing-partner` assigns the authorized scope to the
-   named service-line agent(s), sequencing multi-line engagements.
+1. **Intake** — `engagement-secretary` confirms subject, purpose, and
+   scope, one line each. No specialist agent runs before this routes.
+2. **Routing** — `managing-partner` assigns the scope to the named
+   service-line agent(s), sequencing multi-line engagements.
 3. **Execution** — the specialist agent produces its findings in its
-   documented output format, staying inside the authorized scope.
-4. **Assembly** — `managing-partner` compiles the final client-facing
-   report, including a data-retention/destruction note.
+   documented output format, staying inside scope and its own hard bans
+   (no unauthorized access, no surveillance without a stated purpose, no
+   ROE-less pentesting — these don't loosen for a solo operator).
+4. **Assembly** — `managing-partner` compiles the final report, including
+   a data-retention/destruction note when personal data was touched.
 
 ## Brief Template
 
 ```markdown
-Requesting party: [who is asking, on whose behalf]
 Subject: [organization / system / named individual(s)]
-Lawful basis: [engagement letter | ROE | consent | legal obligation]
+Purpose: [why, in a sentence]
 Scope — in: [...]
 Scope — out: [...]
-Timeline: [start / end date]
 ```
 
-If the lawful basis or scope is missing, the command returns an
-engagement-letter or ROE draft instead of proceeding — this is expected
-behavior, not a failure.
+`pentest-engagement-lead` still needs a signed ROE before testing begins
+— that's proof of authorization to test a specific system, not client
+paperwork, and it doesn't go away.
 
 ## Examples
 
 ```
-/consulting-engagement due-diligence Pre-investment screening of a French target company, signed engagement letter EL-2026-014 attached.
+/consulting-engagement due-diligence Pre-investment screening of a French target company.
 ```
 
 ```
